@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vending Machine</title>
+  <link rel="stylesheet" href="./src/styles/styles.css">
+</head>
+<body>
+  <header class="logo">
+    <h1 class="sr-only">벤딩 머신 로고</h1>
+    <img class="logo__image" src="./src//img/logo.png" alt="코카콜라 로고">
+  </header>
+  <main class="vending-machine">
+    <h1 class="sr-only">벤딩 머신</h1>
+    <section class="purchase-screen">
+      <h2 class="sr-only">구매 화면</h2>
+      <article class="drinks-list">
+        <h3 class="sr-only">음료 목록</h3>
+        <ul class="drinks">
+          <li class="drink">
+            <img class="drink__img" src="./src/img/Original_Cola.png" alt="Original Cola">
+            <span class="drink__name">Original_Cola</span>
+            <div class="drink__price">1,000원</div>
+          </li>
+          <li class="drink">
+            <img class="drink__img" src="./src/img/Violet_Cola.png" alt="Original Cola">
+            <span class="drink__name">Violet_Cola</span>
+            <div class="drink__price">1,000원</div>
+          </li>
+          <li class="drink">
+            <img class="drink__img" src="./src/img/Yellow_Cola.png" alt="Original Cola">
+            <span class="drink__name">Yellow_Cola</span>
+            <div class="drink__price">1,000원</div>
+          </li>
+          <li class="drink">
+            <img class="drink__img" src="./src/img/Cool_Cola.png" alt="Original Cola">
+            <span class="drink__name">Cool_Cola</span>
+            <div class="drink__price">1,000원</div>
+          </li>
+          <li class="drink">
+            <img class="drink__img" src="./src/img/Green_Cola.png" alt="Original Cola">
+            <span class="drink__name">Green_Cola</span>
+            <div class="drink__price">1,000원</div>
+          </li>
+          <li class="drink">
+            <img class="drink__img" src="./src/img/Orange_Cola.png" alt="Original Cola">
+            <span class="drink__name">Orange_Cola</span>
+            <div class="drink__price">1,000원</div>
+          </li>
+        </ul>
+      </article>
+      <article class="purchase-screen__changes">
+        <h3 class="sr-only">잔액 화면</h3>
+        <div class="purchase-screen__changes-display">
+          <span>잔액 :</span>
+          <span>1,000원</span>
+        </div>
+        <button type="button" class="purchase-screen__changes-return-btn">
+          거스름돈 반환
+        </button>
+      </article>
+      <article class="purchase-screen__deposit">
+        <h3 class="sr-only">입금 화면</h3>
+        <form class="purchase-screen__deposit-form" action="./index.html">
+          <input class="purchase-screen__deposit-input" type="text" placeholder="입금액 입력">
+          <button class="purchase-screen__deposit-btn" type="submit">
+            입금
+          </button>
+        </form>
+      </article>
+      <article class="purchase-screen__purchase">
+        <h3 class="sr-only">구매 화면</h3>
+        <ul class="candidates">
+          <li class="candidate">
+            <img class="candidate__img" src="./src/img/Original_Cola.png" alt="Original Cola">
+            <span class="candidate__name">Original_Cola</span>
+            <div class="candidate__quantity">1</div>
+          </li>
+          <li class="candidate">
+            <img class="candidate__img" src="./src/img/Green_Cola.png" alt="Original Cola">
+            <span class="candidate__name">Green_Cola</span>
+            <div class="candidate__quantity">1</div>
+          </li>
+        </ul>
+        <button class="purchase-screen__purchase-btn" type="button">
+          획득
+        </button>
+      </article>
+    </section>
+    <section class="total-amount">
+      <h2 class="sr-only">총 금액</h2>
+      <div class="total-amount__screen">
+        <span>소지금 :</span>
+        <span>25,000원</span>
+      </div>
+    </section>
+    <section class="acquisition-list">
+      <h2>획득한 음료</h2>
+      <article class="acquisition-lists">
+        <h3 class="sr-only">구매한 음료 목록</h3>
+        <ul class="candidates candidates--long">
+          <li class="candidate">
+            <img class="candidate__img" src="./src/img/Original_Cola.png" alt="Original Cola">
+            <span class="candidate__name">Original_Cola</span>
+            <div class="candidate__quantity">1</div>
+          </li>
+          <li class="candidate">
+            <img class="candidate__img" src="./src/img/Green_Cola.png" alt="Original Cola">
+            <span class="candidate__name">Green_Cola</span>
+            <div class="candidate__quantity">2</div>
+          </li>
+          <li class="candidate">
+            <img class="candidate__img" src="./src/img/Orange_Cola.png" alt="Original Cola">
+            <span class="candidate__name">Orange_Cola</span>
+            <div class="candidate__quantity">1</div>
+          </li>
+          <li class="candidate">
+            <img class="candidate__img" src="./src/img/Violet_Cola.png" alt="Original Cola">
+            <span class="candidate__name">Violet_Cola</span>
+            <div class="candidate__quantity">5</div>
+          </li>
+        </ul>
+      </article>
+      <p class="acquisition-list__total-amount">
+        총금액 : 9,000 원
+      </p>
+    </section>
+  </main>
+</body>
+</html>
