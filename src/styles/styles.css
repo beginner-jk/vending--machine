@@ -19,6 +19,7 @@ html, body {
 
 button {
   cursor: pointer;
+  color: #000000;
 }
 
 /* module */
@@ -287,6 +288,10 @@ button {
     padding-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 9px;
+  }
+
+  .purchase-screen__changes-return-btn {
+    padding: 0;
   }
 
   .total-amount {
