@@ -53,17 +53,19 @@ button {
 
 .drinks-list {
   margin-bottom: 20px;
+  height: 272px;
 }
 
 .drinks {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .drink {
   width: 94px;
-  margin-bottom: 12px;
   height: 130px;
   border: var(--size-border) solid var(--color-border);
   box-shadow: var(--box-shadow);
@@ -255,6 +257,47 @@ button {
   justify-content: flex-end;
 }
 
+/* mobile */
+@media screen and (max-width: 754px) {
+  html {
+    background: #FFFFFF;
+  }
+  body {
+    margin: 0 auto;
+    background: #FFFFFF;
+    width: 360px;
+  }
 
+  .logo {
+    width: 166px;
+    height: 71.12px;
+    margin-bottom: 18px;
+  }
+
+  .vending-machine {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px 0px;
+  }
+  
+  .purchase-screen {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 9px;
+  }
+
+  .total-amount {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .acquisition-list {
+    padding-top: 41px;
+  }
+}
 
 /* state */
